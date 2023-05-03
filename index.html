@@ -22,11 +22,21 @@
   <body>
     <!-- header -->
     <header class="page-header">
-      <div class="container">
+      <div class="container page-header-container">
         <nav class="nav-header">
           <a class="logo link" href="./index.html"
             >Web<span class="header-logo">Studio</span></a
           >
+          <button
+          class="menu-toggle js-open-menu is-open"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+        <svg class="mobile-menu" width="32" height="22">
+          <use href="./images/icon.svg#menu-hamburger"></use>
+        </svg>
+        </button>
+
           <ul class="nav-list list">
             <li>
               <a class="link current" href="./index.html">Studio</a>
@@ -65,7 +75,7 @@
       </section>
 
       <!-- features -->
-      <section class="section">
+      <!-- <section class="section">
         <div class="container">
           <h2 class="section-title visually-hidden">Features</h2>
           <ul class="feature-list list">
@@ -119,10 +129,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- What are we doing -->
-      <section class="gallery-section section">
+      <!-- <section class="gallery-section section">
         <div class="container gallery">
           <h2 class="section-title">What are we doing</h2>
           <ul class="list gallery-list">
@@ -152,10 +162,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Our Team -->
-      <section class="section team-section">
+      <!-- <section class="section team-section">
         <div class="container">
           <h2 class="section-title">Our Team</h2>
           <ul class="list team-list">
@@ -429,10 +439,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- customers -->
-      <section class="section customers-section">
+      <!-- <section class="section customers-section">
         <div class="container">
           <h2 class="section-title">Customers</h2>
           <ul class="clients-icon-list list">
@@ -480,12 +490,12 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
     <!-- /customers -->
     <!-- /main -->
     <!-- footer -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer-container">
         <div class="footer-wrap">
           <a class="logo link" href="./index.html"
@@ -559,8 +569,13 @@
           <p class="social-title">Subscribe</p>
           <form class="subscribe-form">
             <label>
-              <input class="subscribe-form-input" type="email" name="subscribe-email" placeholder="E-mail" />
-              </label>
+              <input
+                class="subscribe-form-input"
+                type="email"
+                name="subscribe-email"
+                placeholder="E-mail"
+              />
+            </label>
             <button class="subscribe-button" type="submit">
               Subscribe
               <svg class="subscribe-icon" width="24" height="24">
@@ -569,7 +584,7 @@
             </button>
           </form>
         </div>
-      </div>
+      </div> -->
     </footer>
     <!-- /footer -->
     <div class="backdrop is-hidden" data-modal>
@@ -647,8 +662,31 @@
           <button class="modal-button" type="submit">Send</button>
         </form>
       </div>
+    </div> 
+    <!-- mobile-menu -->
+    
+      <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="modal-btn menu-toggle js-close-menu" type="button">
+        <svg class="modal-icon" width="8" height="8">
+          <use href="./images/icon.svg#xclose"></use>
+        </svg>
+      </button>
+
+     <ul class="mobile-menu">
+        <li><a href="" class="link">Studio</a></li>
+        <li><a href="" class="link">Portfolio</a></li>
+        <li><a href="" class="link">Contacts</a></li>
+      </ul>
     </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
-  <!-- /Body -->
+  <!-- /Body-->
 </html>
