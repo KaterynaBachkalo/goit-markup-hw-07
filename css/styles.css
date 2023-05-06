@@ -1151,7 +1151,10 @@ img {
 }
 
 @media screen and (orientation:landscape) {
-    .backdrop {
+
+    .backdrop,
+    .menu-container,
+    .modal {
         overflow: auto;
     }
 }
