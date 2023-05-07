@@ -916,6 +916,8 @@ img {
     }
 }
 
+.subscribe-form-wrap {}
+
 .subscribe-form-input {
     width: 264px;
     height: 40px;
@@ -930,6 +932,10 @@ img {
     outline: 1px solid transparent;
 
     transition: border var(--animation);
+}
+
+.subscribe-form-field {
+    position: relative;
 }
 
 .subscribe-container input:hover,
@@ -949,6 +955,29 @@ img {
     line-height: 2;
     letter-spacing: 0.04em;
     color: inherit;
+}
+
+.subscribe-form-input:focus,
+.subscribe-form-input:placeholder-shown+.subscribe-form-label {
+    transform: translateY(0);
+
+}
+
+.subscribe-form-input:focus+.subscribe-form-label,
+.subscribe-form-input:not(:placeholder-shown)+.subscribe-form-label {
+    transform: translateY(-22px);
+    opacity: 1;
+}
+
+.subscribe-form-label {
+    position: absolute;
+    left: 16px;
+    top: 0;
+    transform: translate(-50% -50%);
+
+    font-size: 14px;
+    background-color: var(--navi-blue-color);
+    opacity: 0;
 }
 
 .subscribe-button {
